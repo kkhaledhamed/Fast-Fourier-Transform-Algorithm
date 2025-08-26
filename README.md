@@ -1,9 +1,5 @@
 # ADI Summer 2025 – Digital IC Design Internship  
 ## Final Project: Fast Fourier Transform (FFT)  
-
-**Author:** Khaled Ahmed Hamed  
-**Date:** 24 August 2025  
-
 ---
 
 ## 📌 Project Overview  
