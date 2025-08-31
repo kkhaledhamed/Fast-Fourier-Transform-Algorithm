@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Aug 23 13:40:00 2025
+# Process ID: 21376
+# Current directory: E:/DIGITAL/ADI Internship/Final Project/FFT/FFT.runs/synth_1
+# Command line: vivado.exe -log FFT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT.tcl
+# Log file: E:/DIGITAL/ADI Internship/Final Project/FFT/FFT.runs/synth_1/FFT.vds
+# Journal file: E:/DIGITAL/ADI Internship/Final Project/FFT/FFT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FFT.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 299.184 ; gain = 69.973
+Command: synth_design -top FFT -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12884 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 409.398 ; gain = 97.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT' [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:1]
+	Parameter N bound to: 8 - type: integer 
+	Parameter INPUT_WORD_WIDTH bound to: 12 - type: integer 
+	Parameter INPUT_INTEGER_WIDTH bound to: 3 - type: integer 
+	Parameter OUTPUT_WORD_WIDTH bound to: 12 - type: integer 
+	Parameter OUTPUT_INTEGER_WIDTH bound to: 5 - type: integer 
+	Parameter STAGE1 bound to: 2'b00 
+	Parameter STAGE2 bound to: 2'b01 
+	Parameter STAGE3 bound to: 2'b10 
+	Parameter STAGE1_INT_WIDTH bound to: 4 - type: integer 
+	Parameter STAGE1_FRAC_WIDTH bound to: 8 - type: integer 
+	Parameter STAGE1_WIDTH bound to: 12 - type: integer 
+	Parameter STAGE2_INT_WIDTH bound to: 4 - type: integer 
+	Parameter STAGE2_FRAC_WIDTH bound to: 8 - type: integer 
+	Parameter STAGE2_WIDTH bound to: 12 - type: integer 
+	Parameter W0_REAL bound to: 12'sb001000000000 
+	Parameter W0_IMAG bound to: 12'sb000000000000 
+	Parameter W1_REAL bound to: 12'sb000010110101 
+	Parameter W1_IMAG bound to: 12'sb111101001011 
+	Parameter W2_REAL bound to: 12'sb000000000000 
+	Parameter W2_IMAG bound to: 12'sb111000000000 
+	Parameter W3_REAL bound to: 12'sb111101001011 
+	Parameter W3_IMAG bound to: 12'sb111101001011 
+	Parameter TW_W0 bound to: 0 - type: integer 
+	Parameter TW_W1 bound to: 1 - type: integer 
+	Parameter TW_W2 bound to: 2 - type: integer 
+	Parameter TW_W3 bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (1#1) [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 464.246 ; gain = 152.227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 464.246 ; gain = 152.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 464.246 ; gain = 152.227
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/DIGITAL/ADI Internship/Final Project/Constraints_basys3.xdc]
+WARNING: [Vivado 12-2489] -period contains time 14.285700 which will be rounded to 14.286 to ensure it is an integer multiple of 1 picosecond [E:/DIGITAL/ADI Internship/Final Project/Constraints_basys3.xdc:3]
+Finished Parsing XDC File [E:/DIGITAL/ADI Internship/Final Project/Constraints_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/DIGITAL/ADI Internship/Final Project/Constraints_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FFT_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FFT_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 822.422 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 822.422 ; gain = 510.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 822.422 ; gain = 510.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 822.422 ; gain = 510.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:54 . Memory (MB): peak = 822.422 ; gain = 510.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 15    
+	   3 Input     13 Bit       Adders := 17    
+	   2 Input     12 Bit       Adders := 6     
+	   3 Input     12 Bit       Adders := 10    
++---Registers : 
+	               12 Bit    Registers := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FFT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 15    
+	   3 Input     13 Bit       Adders := 17    
+	   2 Input     12 Bit       Adders := 6     
+	   3 Input     12 Bit       Adders := 10    
++---Registers : 
+	               12 Bit    Registers := 64    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP butterfly_MAC19_return5, operation Mode is: A*(B:0xb5).
+DSP Report: operator butterfly_MAC19_return5 is absorbed into DSP butterfly_MAC19_return5.
+DSP Report: Generating DSP butterfly_MAC19_return5, operation Mode is: A*(B:0x3ff4b).
+DSP Report: operator butterfly_MAC19_return5 is absorbed into DSP butterfly_MAC19_return5.
+DSP Report: Generating DSP butterfly_MAC19_return3, operation Mode is: PCIN+A:B+(C:0x80).
+DSP Report: operator butterfly_MAC19_return3 is absorbed into DSP butterfly_MAC19_return3.
+DSP Report: Generating DSP butterfly_MAC19_return5, operation Mode is: A*(B:0x3ff4b).
+DSP Report: operator butterfly_MAC19_return5 is absorbed into DSP butterfly_MAC19_return5.
+DSP Report: Generating DSP butterfly_MAC19_return4, operation Mode is: PCIN+A*(B:0xb5).
+DSP Report: operator butterfly_MAC19_return4 is absorbed into DSP butterfly_MAC19_return4.
+DSP Report: operator butterfly_MAC19_return5 is absorbed into DSP butterfly_MAC19_return4.
+DSP Report: Generating DSP butterfly_MAC21_return5, operation Mode is: A*(B:0x3ff4b).
+DSP Report: operator butterfly_MAC21_return5 is absorbed into DSP butterfly_MAC21_return5.
+DSP Report: Generating DSP butterfly_MAC21_return5, operation Mode is: A*(B:0x3ff4b).
+DSP Report: operator butterfly_MAC21_return5 is absorbed into DSP butterfly_MAC21_return5.
+DSP Report: Generating DSP butterfly_MAC21_return3, operation Mode is: PCIN+A:B+(C:0x80).
+DSP Report: operator butterfly_MAC21_return3 is absorbed into DSP butterfly_MAC21_return3.
+DSP Report: Generating DSP butterfly_MAC21_return4, operation Mode is: C+A*(B:0x3ff4b).
+DSP Report: operator butterfly_MAC21_return4 is absorbed into DSP butterfly_MAC21_return4.
+DSP Report: operator butterfly_MAC21_return5 is absorbed into DSP butterfly_MAC21_return4.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:56 . Memory (MB): peak = 822.422 ; gain = 510.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FFT         | A*(B:0xb5)        | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*(B:0x3ff4b)     | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN+A:B+(C:0x80) | 3      | 18     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT         | A*(B:0x3ff4b)     | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN+A*(B:0xb5)   | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*(B:0x3ff4b)     | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*(B:0x3ff4b)     | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN+A:B+(C:0x80) | 3      | 18     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT         | C+A*(B:0x3ff4b)   | 12     | 9      | 21     | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:267]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:267]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:267]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 872.418 ; gain = 560.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:25 . Memory (MB): peak = 885.863 ; gain = 573.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:265]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:267]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:267]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/DIGITAL/ADI Internship/Final Project/RTL/FFT.v:267]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:01:27 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:29 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:29 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:01:30 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:01:30 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:30 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:01:30 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   212|
+|3     |DSP48E1   |     6|
+|4     |DSP48E1_1 |     2|
+|5     |DSP48E1_2 |     1|
+|6     |LUT1      |   121|
+|7     |LUT2      |   585|
+|8     |FDCE      |   768|
+|9     |IBUF      |   194|
+|10    |OBUF      |   192|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2082|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:01:30 . Memory (MB): peak = 889.254 ; gain = 577.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:48 . Memory (MB): peak = 889.254 ; gain = 219.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:01:30 . Memory (MB): peak = 889.254 ; gain = 577.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 415 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'FFT' is not ideal for floorplanning, since the cellview 'FFT' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:36 . Memory (MB): peak = 889.254 ; gain = 590.070
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/DIGITAL/ADI Internship/Final Project/FFT/FFT.runs/synth_1/FFT.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FFT_utilization_synth.rpt -pb FFT_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 889.254 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 23 13:41:59 2025...
