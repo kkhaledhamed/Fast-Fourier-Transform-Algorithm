@@ -25,7 +25,7 @@ The project focuses on the **Fast Fourier Transform (FFT)** and its end-to-end d
    - Justified why **system modeling comes first** in the design flow.  
 
 3. **Phase 2 – RTL Design**  
-   - Designed FFT architecture in **Verilog/SystemVerilog**.  
+   - Designed FFT architecture in **Verilog**.  
    - Optimized hardware structure for efficiency.  
 
 4. **Phase 3 – RTL Verification**  
@@ -33,7 +33,7 @@ The project focuses on the **Fast Fourier Transform (FFT)** and its end-to-end d
    - Compared RTL results against golden reference vectors.  
 
 5. **Phase 4 – ASIC Implementation**  
-   - Synthesized FFT design for ASIC.  
+   - Synthesized FFT design for ASIC Implementation.  
    - Conducted **timing analysis** and **design optimizations**.  
 
 6. **Phase 5 – FPGA Implementation**  
