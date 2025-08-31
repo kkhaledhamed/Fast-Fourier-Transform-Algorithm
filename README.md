@@ -23,7 +23,8 @@ The project focuses on the **Fast Fourier Transform (FFT)** and its end-to-end d
    - Created a **golden reference model** for **bit-true validation**.  
    - Performed **algorithm verification** against reference outputs.
      <img width="1400" height="241" alt="image" src="https://github.com/user-attachments/assets/98c4f1c3-b78d-432b-a61e-c3487a5e130d" />
-   - Analyzed **performance prediction using SQNR (Signal-to-Quantization Noise Ratio)**.  
+   - Analyzed **performance prediction using SQNR (Signal-to-Quantization Noise Ratio)**.
+     <img width="1000" height="273" alt="image" src="https://github.com/user-attachments/assets/06aa2e3e-7186-435c-8ac1-a21701867d9e" />
    - Justified why **system modeling comes first** in the design flow.  
    ---
 3. **Phase 2 – RTL Design**  
