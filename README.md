@@ -29,6 +29,8 @@ The project focuses on the **Fast Fourier Transform (FFT)** and its end-to-end d
 3. **Phase 2 – RTL Design**  
    - Designed FFT architecture in **Verilog**.
      <img width="919" height="715" alt="image" src="https://github.com/user-attachments/assets/a61d443f-125c-412b-8420-9d75b3cceb2e" />
+   - Implemented Round & Sat to match Matlab Model
+   - Permitted a small tolerance (0.02348) between RTL and Matlab Model
    - Optimized hardware structure for efficiency.
      <img width="1743" height="192" alt="image" src="https://github.com/user-attachments/assets/81501c4c-4807-4723-8fff-5c9b8e0bd40d" />
    ---
