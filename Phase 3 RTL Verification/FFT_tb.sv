@@ -1,5 +1,6 @@
 // =========================================
-// FFT Testbench with File I/O and Compare (Q5.7 support)
+// Developer: Khaled Ahmed Hamed
+// Description: ADI Summer internship Final Project
 // =========================================
 `timescale 1ns/1ps
 
@@ -234,3 +235,4 @@ module FFT_tb;
     end
 
 endmodule
+
