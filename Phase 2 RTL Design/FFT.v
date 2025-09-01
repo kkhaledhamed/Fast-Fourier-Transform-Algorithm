@@ -1,3 +1,7 @@
+// =========================================
+// Developer: Khaled Ahmed Hamed
+// Description: ADI Summer internship Final Project
+// =========================================
 module FFT #(
     parameter N  = 8, // FFT Size (Number of points)
 
@@ -353,5 +357,6 @@ module FFT #(
             {y7_real, y7_imag} <= butterfly_MAC(STAGE3, 1'b1, s2_real3, s2_imag3, s2_real7, s2_imag7, W3_REAL, W3_IMAG, TW_W3);
         end
     end
+
 
 endmodule
