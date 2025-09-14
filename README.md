@@ -1,6 +1,5 @@
 # ADI Summer 2025 – Digital IC Design Internship  
 ## Final Project: Fast Fourier Transform (FFT)  
----
 
 ## 📌 Project Overview  
 This repository contains the work completed during my **final internship project** at **Analog Devices** as part of the Digital IC Design Internship (Summer 2025).  
