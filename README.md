@@ -5,7 +5,6 @@
 This repository contains the work completed during my **final internship project** at **Analog Devices** as part of the Digital IC Design Internship (Summer 2025).  
 
 The project focuses on the **Fast Fourier Transform (FFT)** and its end-to-end design flow: from **algorithm exploration** to **ASIC and FPGA implementation**.  
-
 ---
 
 ## 🛠️ Project Phases  
